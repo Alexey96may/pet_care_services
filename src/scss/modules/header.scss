@@ -1,0 +1,194 @@
+@use "../base/vars";
+
+.header {
+    background-color: vars.$mediumBgColor;
+    padding: 1.19em 0 2.8em;
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: vars.$basicTrans;
+        &:hover {
+            color: vars.$pickedBgColor;
+        }
+    }
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.875em;
+}
+
+.nav-item {
+    a {
+        font-size: 1.125rem;
+        font-weight: 500;
+        transition: vars.$basicTrans;
+        &:hover {
+            color: vars.$pickedBgColor;
+        }
+    }
+}
+
+.nav-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.nav-tool {
+    width: 2em;
+    height: 2em;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        transition: vars.$basicTrans;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+//  Burger
+.burger {
+    margin-left: 1.5em;
+    width: 2em;
+    position: relative;
+    // height: 1.29rem;
+    cursor: pointer;
+    display: none;
+}
+
+.burger span {
+    vertical-align: middle;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+    width: 100%;
+    height: 2px;
+    background-color: vars.$lightBgColor;
+    border-radius: 2px;
+    transition: vars.$basicTrans;
+}
+
+.burger span::before,
+.burger span::after {
+    content: "";
+    position: absolute;
+}
+
+.burger span {
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.burger span::before {
+    top: 0;
+}
+
+.burger span::after {
+    bottom: 0;
+}
+
+.burger:hover span::after {
+    width: 100%;
+}
+
+@media (max-width: vars.$mediaTablet) {
+}
+
+@media (max-width: vars.$mediaSmallTablet) {
+    .header {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    //  Burger Menu
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: vars.$mediumBgColorOp;
+        padding: 2em;
+        order: 2;
+        overflow: visible;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+        overflow: auto;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .appear {
+        display: block;
+    }
+
+    .burger span {
+        width: 0%;
+    }
+
+    .burger span {
+        margin: 5px 0;
+        display: inline-block;
+    }
+
+    .burger span::before {
+        transform: translateY(500%) rotateZ(45deg);
+    }
+
+    .burger span::after {
+        transform: translateY(-500%) rotateZ(-45deg);
+    }
+
+    .burger:hover span::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    .burger span::before {
+        transform: translateY(400%) rotateZ(45deg);
+    }
+    .burger span::after {
+        transform: translateY(-400%) rotateZ(-45deg);
+    }
+}
+
+@media (max-width: vars.$mediaSmallMobile) {
+    .burger span::before {
+        transform: translateY(320%) rotateZ(45deg);
+    }
+    .burger span::after {
+        transform: translateY(-320%) rotateZ(-45deg);
+    }
+}

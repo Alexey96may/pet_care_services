@@ -1,13 +1,16 @@
-// Colors
+// Text Colors
 $lightTextColor: #ffecc2;
 $darkTextColor: #264236;
 $paleTextColor: #848d74;
 
+//  Background Colors
 $lightBgColor: #ffecc2;
 $mediumBgColor: #96a757;
+$mediumBgColorOp: rgb(150, 167, 87, 0.8);
 $darkBgColor: #264236;
 $pickedBgColor: #e8c01b;
 
+//  Border Colors
 $lightBorderColor: #ffecc2;
 $darkBorderColor: #96a757;
 
@@ -29,7 +32,7 @@ $containerWidth: 1440px;
 $containerPadding: 20px;
 
 //  Transitions
-$basicTrans: all 0.2s;
+$basicTrans: all 0.3s;
 
 // Paddings & Margins
 $mainPadding: 20px;
@@ -39,4 +42,4 @@ $mainMargin: 20px;
 $mediaTablet: 992px;
 $mediaSmallTablet: 767px;
 $mediaMobile: 575px;
-$mediaSmallMobile: 320px;
+$mediaSmallMobile: 370px;
