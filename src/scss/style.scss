@@ -1,13 +1,5 @@
-@use "base/variables";
 @use "base/reset";
-@use "./fonts";
+@use "./modules/body";
 @use "./modules/header";
+@use "./modules/main";
 @use "./modules/footer";
-
-body {
-    font-family: "Poppins", "Open Sans", sans-serif;
-    font-weight: 400;
-    h1 {
-        color: variables.$mainColor;
-    }
-}
