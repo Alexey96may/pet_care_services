@@ -1,16 +1,43 @@
 <section class="choose">
-    <div class="container">
+    <div class="container choose__container">
         <div class="pet-card">
             <h2 class="pet-card__title">Cats</h2>
             <div class="photo-wrapper">
-                <img src="./choose_cat.avif" alt="cat" />
+                <img src="./img/choose_cat.avif" alt="cat" />
             </div>
-            <div class="number-bar">
-                <span class="number-bar__minus">-</span>
-                <span class="number-bar__number">0</span>
-                <span class="number-bar__plus">+</span>
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Dogs</h2>
+            <div class="photo-wrapper">
+                <img src="./img/choose_dog.avif" alt="dog" />
             </div>
-            <button class="button" area-label="Add pet to cart">
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Services</h2>
+            <div class="photo-wrapper">
+                <img src="./img/choose_services.avif" alt="service" />
+            </div>
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
                 Add to cart
             </button>
         </div>

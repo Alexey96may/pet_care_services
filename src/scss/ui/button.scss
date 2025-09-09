@@ -13,6 +13,7 @@
     user-select: none;
     display: inline-block;
     transition: vars.$basicTrans;
+    white-space: nowrap;
 
     &:hover {
         background-color: vars.$pickedBgColor;
