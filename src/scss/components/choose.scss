@@ -7,7 +7,7 @@
     overflow-x: hidden;
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 1em;
         position: relative;
@@ -89,23 +89,5 @@
 
     .pet-card {
         height: auto;
-    }
-}
-
-@media (max-width: vars.$mediaSmallTablet) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: vars.$mediaMobile) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: vars.$mediaSmallMobile) {
-    html {
-        font-size: 10px;
     }
 }
