@@ -9,6 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 1em;
     }
 }
 
@@ -23,6 +24,10 @@
     }
 }
 
+.nav {
+    overflow: auto;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -34,6 +39,7 @@
         font-size: 1.125rem;
         font-weight: 500;
         transition: vars.$basicTrans;
+        white-space: nowrap;
         &:hover {
             color: vars.$pickedBgColor;
         }
@@ -128,67 +134,78 @@
         top: 0;
         left: 0;
         background-color: vars.$mediumBgColorOp;
-        padding: 2em;
         order: 2;
-        overflow: visible;
+        overflow: auto;
         width: 100%;
         height: 100%;
     }
     .nav-list {
+        padding: 5em;
         position: absolute;
-        top: 50%;
+        top: 0;
         left: 50%;
-        translate: -50% -50%;
+        transform: translateX(-50%);
         flex-direction: column;
         align-items: center;
         gap: 5em;
-        overflow: auto;
     }
 
     .burger {
         display: block;
+        span {
+            transition: width 0.3s ease-in, transform 0.3s ease-in;
+        }
     }
 
     .appear {
         display: block;
     }
 
-    .burger span {
+    .burger--cancel span {
         width: 0%;
+        background-color: rgba(0, 255, 255, 0);
     }
 
-    .burger span {
+    .burger--cancel span {
         margin: 5px 0;
         display: inline-block;
     }
 
-    .burger span::before {
+    .burger--cancel span::before {
         transform: translateY(500%) rotateZ(45deg);
     }
 
-    .burger span::after {
+    .burger--cancel span::after {
         transform: translateY(-500%) rotateZ(-45deg);
     }
 
-    .burger:hover span::after {
+    .burger--cancel:hover span::after {
         width: 100%;
     }
 }
 
 @media (max-width: vars.$mediaMobile) {
-    .burger span::before {
+    .nav-list {
+        padding: 4em;
+        gap: 4em;
+    }
+    .burger--cancel span::before {
         transform: translateY(400%) rotateZ(45deg);
     }
-    .burger span::after {
+    .burger--cancel span::after {
         transform: translateY(-400%) rotateZ(-45deg);
     }
 }
 
 @media (max-width: vars.$mediaSmallMobile) {
-    .burger span::before {
+    .nav-list {
+        padding: 3em;
+        gap: 3em;
+    }
+    .burger--cancel span::before {
         transform: translateY(320%) rotateZ(45deg);
     }
-    .burger span::after {
+    .burger--cancel span::after {
         transform: translateY(-320%) rotateZ(-45deg);
     }
 }
