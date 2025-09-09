@@ -2,7 +2,7 @@
 
 .header {
     background-color: vars.$mediumBgColor;
-    padding: 1.19em 0 2.8em;
+    padding: 1.19em 0;
     position: relative;
 
     &__container {
@@ -63,7 +63,7 @@
         height: 100%;
         transition: vars.$basicTrans;
         &:hover {
-            opacity: 0.7;
+            transform: scale(1.2);
         }
     }
 }

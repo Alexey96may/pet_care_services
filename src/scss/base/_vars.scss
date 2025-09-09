@@ -18,14 +18,16 @@ $darkBorderColor: #96a757;
 $mainFontFamily: "Poppins", "Open Sans", sans-serif;
 $titleFontFamily: "Skincake", "Pacifico", sans-serif;
 
+$basicFontSize: 16px;
+
 $pMiniFontSize: 8px;
 $pFontSize: 16px;
 $subtFontSize: 24px;
 $tFontSize: 48px;
 
 //  Borders
-$smallBorderRadius: 30%;
-$bigBorderRadius: 60%;
+$smallBorderRadius: 1.875em;
+$bigBorderRadius: 3.75em;
 
 //  Container
 $containerWidth: 1440px;
@@ -33,6 +35,9 @@ $containerPadding: 20px;
 
 //  Transitions
 $basicTrans: all 0.3s;
+
+//  Opacity
+$basicOpacity: 0.6;
 
 // Paddings & Margins
 $mainPadding: 20px;

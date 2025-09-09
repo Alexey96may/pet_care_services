@@ -2,13 +2,14 @@
 @use "../fonts";
 
 html {
-    font-size: vars.$pFontSize;
+    font-size: vars.$basicFontSize;
 }
 
 body {
     font-family: vars.$mainFontFamily;
     font-weight: 400;
     color: vars.$lightTextColor;
+    background-color: vars.$lightBgColor;
 }
 
 .body__fixed {
