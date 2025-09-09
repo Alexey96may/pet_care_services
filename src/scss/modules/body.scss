@@ -11,6 +11,10 @@ body {
     color: vars.$lightTextColor;
 }
 
+.body__fixed {
+    overflow: hidden;
+}
+
 .container {
     max-width: vars.$containerWidth;
     padding: 0 vars.$containerPadding;

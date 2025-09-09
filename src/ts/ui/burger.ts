@@ -1,6 +1,7 @@
 export class Burger {
     #burgerButton = document.getElementById("burger");
     #headerNav = document.getElementById("headerNav");
+    #body = document.querySelector("body");
     #isMenuOpen = false;
 
     constructor() {
@@ -14,5 +15,6 @@ export class Burger {
     classesToggle(): void {
         this.#burgerButton?.classList.toggle("burger--cancel");
         this.#headerNav?.classList.toggle("appear");
+        this.#body?.classList.toggle("body__fixed");
     }
 }
