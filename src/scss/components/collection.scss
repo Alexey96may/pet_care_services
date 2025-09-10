@@ -1,2 +1,105 @@
 @use "../base/vars";
 @use "../ui/button";
+
+.collection {
+    &__title {
+        font-size: vars.$tFontSize;
+        font-family: vars.$titleFontFamily;
+        color: vars.$paleTextColor;
+        line-height: 1.33;
+        margin-bottom: 1em;
+    }
+}
+
+.collection-tags {
+}
+.tag-bar {
+    width: 90%;
+    background-color: vars.$darkBgColor;
+    border-radius: vars.$bigBorderRadius;
+    margin-bottom: 10px; //?
+}
+.tag {
+    display: inline-block;
+    width: auto;
+    a {
+        display: inline-block;
+        padding: 0.5em 1em; // ?
+        border-radius: 20px; //?
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+    }
+}
+.videos {
+    display: flex;
+    gap: 10px; //?
+}
+.video {
+    max-width: 310px; //?
+    background-color: vars.$mediumBgColor;
+    color: vars.$darkTextColor;
+    padding: 10px 20px; // ?
+    border-radius: vars.$smallBorderRadius; // ?
+
+    // &:nth-child[even] {
+    //     background-color: vars.$darkBgColor;
+    //     color: vars.$lightTextColor;
+    // }
+}
+.video-prevue {
+    display: grid;
+    grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+    grid-template-areas: "title pic" "descr pic";
+    align-items: center;
+    background-color: vars.$lightBgColor;
+    border-radius: vars.$smallBorderRadius; //?
+    gap: 20px 30px; //?
+    padding: 20px 10px; // ?
+    margin-bottom: 20px; //?
+}
+.video-prevue__title {
+    grid-area: title;
+    max-width: 150px; //?
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.video-prevue__descr {
+    grid-area: descr;
+    max-width: 150px; //?
+    max-height: 100px; // ?
+    overflow: hidden;
+    margin-bottom: 20px; //?
+    p {
+        text-overflow: ellipsis;
+    }
+}
+.video-prevue__pic {
+    grid-area: pic;
+}
+.video__tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.play {
+    background-color: vars.$darkBgColor;
+    border-radius: vars.$smallBorderRadius; //?
+    max-width: 50px; //?
+    padding: 5px 10px; //?
+    img {
+        background-color: vars.$lightBgColor;
+        border-radius: vars.$smallBorderRadius; //?
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+.video__something {
+    padding: 5px 10px; //?
+}
+.video__something--dark {
+    background-color: vars.$darkBgColor;
+    color: vars.$lightTextColor;
+    border-radius: vars.$smallBorderRadius; //?
+}
