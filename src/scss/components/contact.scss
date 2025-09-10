@@ -1,0 +1,33 @@
+@use "../base/vars";
+@use "../ui/button";
+
+.contact {
+    padding: 22px 0; //?
+    background-color: vars.$mediumBgColor;
+    // background-image: url();
+    color: vars.$darkTextColor;
+}
+.contact__descr {
+    max-width: 300px; //?
+    margin-bottom: 20px; //?
+    p {
+        max-height: 40px; //?
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+.contact__form {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px; //?
+}
+.contact__text {
+    border-radius: vars.$smallBorderRadius; //?
+    padding: 5px 10px; //?
+}
+.contact__submit {
+    border-radius: vars.$smallBorderRadius; //?
+    background-color: vars.$darkBgColor;
+}
