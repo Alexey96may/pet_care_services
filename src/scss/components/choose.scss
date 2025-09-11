@@ -33,7 +33,7 @@
         position: relative;
         &::after {
             content: "";
-            background-image: url("/img/choose_emblem.avif");
+            background-image: url("../img/choose_emblem.avif");
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
