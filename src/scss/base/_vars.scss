@@ -2,6 +2,7 @@
 $lightTextColor: #ffecc2;
 $darkTextColor: #264236;
 $paleTextColor: #848d74;
+$mediumTextColor: #96a757;
 
 //  Background Colors
 $lightBgColor: #ffecc2;
@@ -31,8 +32,8 @@ $smallBorderRadius: 1.875em;
 $bigBorderRadius: 3.75em;
 
 //  Container
-$containerWidth: 1184px;
 $containerPadding: 20px;
+$containerWidth: 1184px + ($containerPadding * 2);
 
 //  Transitions
 $basicTrans: all 0.3s;

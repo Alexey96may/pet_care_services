@@ -1,0 +1,228 @@
+@use "../base/vars";
+@use "../ui/button";
+
+.best-seller {
+    margin-bottom: 16.45rem;
+}
+
+.best-seller__title {
+    font-size: vars.$tFontSize;
+    color: vars.$paleTextColor;
+    font-family: vars.$titleFontFamily;
+    font-weight: 400;
+    line-height: 0.42em;
+    margin-bottom: 1.67em;
+}
+
+.best-seller__tag-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+    background-color: inherit;
+    overflow: auto;
+    -ms-overflow-style: none;
+    border-radius: unset;
+    margin-bottom: 5em;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.best-seller__tag {
+    border: 1px solid vars.$darkBorderColor;
+    border-radius: vars.$smallBorderRadius;
+    transition: vars.$basicTrans;
+    padding: 0.5em 1em;
+
+    a {
+        font-size: vars.$pFontSize;
+        white-space: nowrap;
+        padding: 0;
+        font-family: vars.$mainFontFamily;
+        color: vars.$mediumTextColor;
+        font-weight: 500;
+        transition: vars.$basicTrans;
+    }
+
+    &:hover {
+        background-color: vars.$mediumBgColor;
+        a {
+            color: vars.$lightTextColor;
+            background-color: vars.$mediumBgColor;
+        }
+    }
+}
+
+.best-seller__pet-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 17.3rem));
+    justify-content: center;
+    gap: 24px;
+}
+
+.pet-card__bs {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    align-items: stretch;
+    height: auto;
+    border: none;
+
+    &:last-child::after {
+        background-image: none;
+    }
+}
+
+.pet-card__img {
+    max-width: 278px;
+    max-height: 278px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pet-card__info {
+    padding: 1.125em 0.875em;
+    background-color: vars.$mediumBgColor;
+}
+
+.pet-card__main {
+    display: grid;
+    grid-template-columns: minmax(0, 163px) 1fr;
+    grid-template-areas:
+        "title rank"
+        "descr .";
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 1em;
+}
+
+.pet-card__title {
+    grid-area: title;
+    font-size: 0.75rem;
+    font-family: vars.$mainFontFamily;
+    color: vars.$lightTextColor;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.pet-card__descr {
+    grid-area: descr;
+    font-size: vars.$pFontSize;
+    font-family: vars.$mainFontFamily;
+    color: vars.$lightTextColor;
+    font-weight: 500;
+    line-height: 1.25;
+    max-height: 2.65em;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(
+            rgba(150, 167, 87, 0),
+            rgba(150, 167, 87, 0.4),
+            rgba(150, 167, 87, 0.9)
+        );
+    }
+}
+
+.pet-card__rating {
+    grid-area: rank;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 4px;
+    align-items: center;
+}
+
+.pet-card__star {
+    width: 1.19em;
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pet-card__rating-num {
+    font-size: 0.75rem;
+    font-family: vars.$mainFontFamily;
+    color: vars.$lightTextColor;
+    font-weight: 400;
+    line-height: 1.67em;
+}
+
+.pet-card__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3em;
+
+    .button {
+        font-size: 0.875rem;
+        font-weight: 600;
+        background-color: vars.$mediumBgColor;
+        padding: 0.67em 1.15em;
+        border: 1px solid vars.$lightBorderColor;
+
+        &:hover {
+            background-color: vars.$pickedBgColor;
+        }
+    }
+}
+
+.pet-card__old-plice {
+    text-decoration: line-through;
+    font-size: vars.$pFontSize;
+    font-weight: 300;
+}
+.pet-card__new-plice {
+    font-size: vars.$pFontSize;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+@media (hover: none) {
+    .best-seller__tag {
+        &:hover {
+            background-color: inherit;
+            a {
+                color: vars.$mediumTextColor;
+                background-color: inherit;
+            }
+        }
+    }
+
+    .pet-card__bottom {
+        .button {
+            &:hover {
+                background-color: vars.$mediumBgColor;
+            }
+        }
+    }
+
+    .button:hover,
+    .button:active {
+        background-color: vars.$darkBgColor;
+        color: vars.$lightTextColor;
+    }
+
+    .button--light:hover,
+    .button--light:active {
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+    }
+}
