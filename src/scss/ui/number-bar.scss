@@ -1,0 +1,23 @@
+@use "../base/vars";
+
+.number-bar {
+    padding: 0.625em 1.75em;
+    border: 2px solid vars.$darkBorderColor;
+    border-radius: vars.$bigBorderRadius;
+    color: vars.$darkTextColor;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: vars.$subtFontSize;
+}
+
+.number-bar__minus,
+.number-bar__plus {
+    cursor: pointer;
+    transition: vars.$basicTrans;
+    &:hover {
+        transform: vars.$basicScale;
+    }
+}

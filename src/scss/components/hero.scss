@@ -1,0 +1,94 @@
+@use "../base/vars";
+@use "../ui/button";
+
+.hero {
+    background-color: vars.$mediumBgColor;
+    background-image: url("/img/hero_bg.avif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    padding: 7.3em 0 4.3em;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hero-info {
+    max-width: 555px;
+}
+
+.hero__title {
+    font-size: 8rem;
+    font-family: vars.$titleFontFamily;
+    line-height: 1;
+    letter-spacing: 0%;
+}
+
+.hero__descr-wrapper {
+    margin: 1.625em 0 1.44em;
+}
+
+.hero__descr {
+    max-width: 336px;
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.hero__buttons {
+    a + a {
+        margin-left: 1.625em;
+    }
+}
+
+.hero-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.media-item {
+    width: 2rem;
+    transition: vars.$basicTrans;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: vars.$mediaSmallTablet) {
+    .hero {
+        padding: 6.3em 0 3.3em;
+    }
+    .hero__title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    .hero {
+        padding: 5.3em 0 2.3em;
+    }
+    .hero__title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: vars.$mediaSmallMobile) {
+    .hero {
+        padding: 4.3em 0 1.3em;
+    }
+    .hero__title {
+        font-size: 4rem;
+    }
+}

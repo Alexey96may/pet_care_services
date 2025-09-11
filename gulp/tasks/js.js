@@ -18,6 +18,7 @@ export function js(done) {
         .pipe(
             ts({
                 module: "ESNext",
+                target: "ESNext",
                 noImplicitAny: true,
                 skipLibCheck: true,
             })

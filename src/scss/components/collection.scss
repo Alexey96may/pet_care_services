@@ -1,0 +1,283 @@
+@use "../base/vars";
+
+.collection {
+    margin-bottom: 11.375rem;
+    &__title {
+        font-size: vars.$tFontSize;
+        font-family: vars.$titleFontFamily;
+        color: vars.$paleTextColor;
+        line-height: 1.33;
+        margin-bottom: 0.875em;
+        font-size: vars.$tFontSize;
+    }
+}
+
+.collection-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: min(100%, 68.5em);
+    margin-bottom: 11.38em;
+}
+
+.tag-bar {
+    background-color: vars.$darkBgColor;
+    border: 1px solid vars.$darkestBorderColor;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid vars.$darkestBorderColor;
+    background-color: vars.$lightBgColor;
+    border-radius: 30px;
+    width: auto;
+    a {
+        display: inline-block;
+        padding: 0.25em 1.83em;
+        border-radius: 1.25em;
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+        font-size: vars.$subtFontSize;
+        font-weight: 700;
+        transition: vars.$basicTrans;
+
+        &:hover {
+            background-color: vars.$pickedBgColor;
+        }
+    }
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.video {
+    max-width: 23.7em;
+    background-color: vars.$mediumBgColor;
+    color: vars.$darkTextColor;
+    padding: 1em;
+    border-radius: 0.625em;
+}
+
+.video:nth-child(even) {
+    background-color: vars.$darkBgColor;
+    color: vars.$lightTextColor;
+
+    .video-prevue {
+        color: vars.$lightTextColor;
+        background-color: vars.$darkBgColor;
+    }
+
+    .play {
+        background-color: vars.$lightBgColor;
+
+        &:hover {
+            background-color: vars.$pickedBgColor;
+        }
+    }
+
+    .video__something {
+        &:hover {
+            color: vars.$paleTextColor;
+        }
+    }
+
+    .video__something--dark {
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+
+        &:hover {
+            background-color: vars.$pickedBgColor;
+            color: vars.$darkTextColor;
+        }
+    }
+}
+
+.video-prevue {
+    display: grid;
+    grid-template-columns: minmax(1em, auto) minmax(0, 89px);
+    grid-template-areas:
+        "title pic"
+        "descr pic";
+    align-items: center;
+    background-color: vars.$lightBgColor;
+    border-radius: 0.625em;
+    column-gap: 0.75em;
+    row-gap: 0.75em;
+    padding: 3.16em 1.5em 3em;
+    margin-bottom: 1.22em;
+}
+
+.video-prevue__title {
+    font-size: vars.$subtFontSize;
+    font-weight: 600;
+    line-height: 1.25;
+    grid-area: title;
+    max-width: 9.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-prevue__descr {
+    grid-area: descr;
+    max-width: 9.9rem;
+    max-height: 4.2em;
+    overflow: hidden;
+
+    p {
+        text-overflow: ellipsis;
+    }
+}
+
+.video-prevue__pic {
+    grid-area: pic;
+    width: 5.6;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.video__tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play {
+    background-color: vars.$darkBgColor;
+    border-radius: 50%;
+    max-width: 3.5em;
+    max-height: 3.5em;
+    padding: 1em 1em 1em 1em;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: vars.$basicTrans;
+
+    img {
+        object-fit: contain;
+        width: 1.5em;
+        height: 1.5em;
+        transition: vars.$basicTrans;
+    }
+
+    &:hover {
+        background-color: vars.$pickedBgColor;
+    }
+
+    &:hover img {
+        transform: vars.$basicScale;
+    }
+}
+
+.video__something {
+    white-space: nowrap;
+    margin-left: 1.5em;
+    padding: 0;
+    transition: vars.$basicTrans;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 9.75em;
+    flex-shrink: 1;
+
+    &:hover {
+        background-color: none;
+        color: vars.$lightTextColor;
+    }
+}
+
+.video__something--dark {
+    padding: 1.125em 1.5em;
+    background-color: vars.$darkBgColor;
+    border-radius: vars.$bigBorderRadius;
+    color: vars.$lightTextColor;
+    margin-left: 0;
+
+    &:hover {
+        background-color: vars.$pickedBgColor;
+        color: vars.$darkTextColor;
+    }
+}
+
+@media (max-width: 1120px) {
+    .videos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    .collection-tags {
+        margin-bottom: 6.38em;
+    }
+
+    .videos {
+        gap: 3.5em;
+    }
+
+    .tag {
+        a {
+            font-size: vars.$pFontSize;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (hover: none) {
+    .tag {
+        a {
+            &:hover {
+                background-color: inherit;
+            }
+        }
+    }
+
+    .video__something {
+        &:hover {
+            background-color: none;
+            color: vars.$darkTextColor;
+        }
+    }
+
+    .video__something--dark {
+        &:hover {
+            background-color: vars.$darkBgColor;
+            color: vars.$lightTextColor;
+        }
+    }
+
+    .video:nth-child(even) {
+        .play {
+            &:hover {
+                background-color: vars.$lightBgColor;
+            }
+        }
+
+        .video__something {
+            &:hover {
+                color: vars.$lightTextColor;
+            }
+        }
+
+        .video__something--dark {
+            &:hover {
+                background-color: vars.$lightBgColor;
+                color: vars.$darkTextColor;
+            }
+        }
+    }
+}

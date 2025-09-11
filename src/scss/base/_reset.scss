@@ -11,6 +11,11 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 :where(ul, ol):where([class]) {
     padding-left: 0;
 }

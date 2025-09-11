@@ -1,0 +1,45 @@
+<section class="choose">
+    <div class="container choose__container">
+        <div class="pet-card">
+            <h2 class="pet-card__title">Cats</h2>
+            <div class="photo-wrapper">
+                <img src="./img/choose_cat.avif" alt="cat" />
+            </div>
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Dogs</h2>
+            <div class="photo-wrapper">
+                <img src="./img/choose_dog.avif" alt="dog" />
+            </div>
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Services</h2>
+            <div class="photo-wrapper">
+                <img src="./img/choose_services.avif" alt="service" />
+            </div>
+            @@include('../ui/number-bar.html', {})
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+    </div>
+</section>

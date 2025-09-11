@@ -1,7 +1,53 @@
 @use "../base/vars";
 @use "../fonts";
 
+html {
+    font-size: vars.$basicFontSize;
+}
+
 body {
     font-family: vars.$mainFontFamily;
     font-weight: 400;
+    color: vars.$lightTextColor;
+    background-color: vars.$lightBgColor;
+}
+
+.body__fixed {
+    overflow: hidden;
+}
+
+.container {
+    max-width: vars.$containerWidth;
+    padding: 0 vars.$containerPadding;
+    margin: 0 auto;
+}
+
+@media (max-width: vars.$mediaTablet) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 884px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: vars.$mediaSmallTablet) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: vars.$mediaSmallMobile) {
+    html {
+        font-size: 10px;
+    }
 }

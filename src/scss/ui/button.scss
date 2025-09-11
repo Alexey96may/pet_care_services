@@ -1,0 +1,41 @@
+@use "../base/vars";
+
+.button {
+    min-width: 7.5em;
+    font-size: 1rem;
+    font-family: vars.$mainFontFamily;
+    color: vars.$lightTextColor;
+    font-weight: 400;
+    padding: 0.875em 2.25em;
+    border-radius: vars.$bigBorderRadius;
+    background-color: vars.$darkBgColor;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: vars.$basicTrans;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: vars.$pickedBgColor;
+        color: vars.$darkTextColor;
+    }
+}
+
+.button--light {
+    color: vars.$darkTextColor;
+    background-color: vars.$lightBgColor;
+}
+
+@media (hover: none) {
+    .button:hover,
+    .button:active {
+        background-color: vars.$darkBgColor;
+        color: vars.$lightTextColor;
+    }
+
+    .button--light:hover,
+    .button--light:active {
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+    }
+}
