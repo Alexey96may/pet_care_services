@@ -179,3 +179,9 @@
         gap: 3.5em;
     }
 }
+
+@media (max-width: vars.$mediaMobile) {
+    .container-copy {
+        font-size: 0.8em;
+    }
+}

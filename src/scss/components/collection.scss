@@ -220,6 +220,23 @@
     }
 }
 
+@media (max-width: vars.$mediaMobile) {
+    .collection-tags {
+        margin-bottom: 6.38em;
+    }
+
+    .videos {
+        gap: 3.5em;
+    }
+
+    .tag {
+        a {
+            font-size: vars.$pFontSize;
+            font-weight: 600;
+        }
+    }
+}
+
 @media (hover: none) {
     .tag {
         a {

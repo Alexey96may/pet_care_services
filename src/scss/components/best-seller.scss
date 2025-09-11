@@ -196,6 +196,16 @@
     margin-left: 4px;
 }
 
+@media (max-width: vars.$mediaMobile) {
+    .best-seller {
+        margin-bottom: 5.38rem;
+    }
+
+    .best-seller__title {
+        margin-bottom: 1.2em;
+    }
+}
+
 @media (hover: none) {
     .best-seller__tag {
         &:hover {

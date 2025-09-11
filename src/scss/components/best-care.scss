@@ -4,11 +4,11 @@
 .best-care {
     margin-bottom: 11.38em;
 }
-.container {
-}
+
 .bc__info {
     max-width: 39.63em;
 }
+
 .bc__title {
     font-size: vars.$tFontSize;
     font-family: vars.$titleFontFamily;
@@ -16,6 +16,7 @@
     line-height: 1.33;
     margin-bottom: 1em;
 }
+
 .bc__descr {
     max-width: 35em;
     margin-bottom: 4em;
@@ -25,11 +26,13 @@
         color: vars.$paleTextColor;
     }
 }
+
 .bc__cards {
     display: flex;
     justify-content: space-between;
     gap: 1.5em;
 }
+
 .bc__card {
     background-color: vars.$mediumBgColor;
     border-radius: 1.25em;
@@ -40,19 +43,23 @@
     flex-direction: column;
     align-items: center;
 }
+
 .bc__card__title {
     font-size: vars.$subtFontSize;
     font-weight: 700;
     margin-bottom: 0.83em;
 }
+
 .bc__card__descr {
     flex-grow: 1;
+
     p {
         text-align: center;
         max-height: 3.125em;
         overflow: hidden;
     }
 }
+
 .bc__card__pole {
     position: relative;
     background-color: vars.$darkBgColor;
@@ -60,12 +67,14 @@
     height: 172px;
     width: 100%;
 }
+
 .bc__card__pole--double {
     background-color: unset;
     display: flex;
     justify-content: space-between;
     gap: 0.5em;
 }
+
 .form-create {
     position: relative;
     position: absolute;
@@ -110,14 +119,17 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .setting-image {
     width: 2em;
 }
+
 .setting-title,
 .scissors-title {
     font-size: 1em;
     margin-bottom: 0.5em;
 }
+
 .setting-descr,
 .scissors-descr {
     font-size: 0.5em;
@@ -128,14 +140,16 @@
         text-overflow: ellipsis;
     }
 }
+
 .scissors-image {
     width: 2em;
 }
+
 .pole-bar {
     width: 1.95em;
     height: 100%;
     background-color: vars.$darkBgColor;
-    border-radius: 1.25em;
+    border-radius: calc(1.95em / 2);
     position: relative;
     cursor: pointer;
 
@@ -146,17 +160,18 @@
 
     &:hover::before {
         height: 100%;
+        border-radius: calc(1.95em / 2);
     }
 
     &::after {
         content: "";
-        width: 31px;
-        height: 35px;
-        border-radius: 1.25em;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
         background-color: vars.$lightBgColor;
         position: absolute;
         top: 0;
-        left: -2.5px;
+        left: calc((30px - 1.75em) / -2);
         transition: 0.5s;
     }
 
@@ -165,13 +180,14 @@
         width: 100%;
         height: 17.5px;
         background-color: vars.$pickedBgColor;
-        border-radius: 1.25em 1.25em;
+        border-radius: calc(1.95em / 2);
         position: absolute;
         top: 0;
         left: 0;
         transition: 0.5s;
     }
 }
+
 .pole-actions {
     width: 100%;
     background-color: vars.$darkBgColor;
@@ -181,6 +197,7 @@
     gap: 1em;
     padding: 0.75em 0.79em;
 }
+
 .pole__button {
     height: 2.44em;
     font-size: 1em;
@@ -188,4 +205,82 @@
     border: 1px solid vars.$lightBorderColor;
     font-weight: 600;
     padding: 0;
+}
+
+@media (max-width: vars.$mediaTablet) {
+    .bc__card {
+        background-color: vars.$mediumBgColor;
+        border-radius: 1.25em;
+        height: 323px;
+        width: 25em;
+        padding: 42px 13.2px 19px;
+    }
+
+    .bc__card__pole {
+        height: 140px;
+    }
+
+    .pole-bar {
+        &::after {
+            width: 25px;
+            height: 25px;
+            left: calc((25px - 1.75em) / -2);
+        }
+    }
+}
+
+@media (max-width: vars.$mediaSmallTablet) {
+    .bc__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5em;
+    }
+
+    .bc__card {
+        background-color: vars.$mediumBgColor;
+        border-radius: 1.25em;
+        height: auto;
+        width: 25em;
+        padding: 42px 13.2px 19px;
+    }
+
+    .bc__card__descr {
+        margin-bottom: 4em;
+    }
+
+    .setting-title,
+    .scissors-title {
+        font-size: 1.3em;
+    }
+
+    .setting-descr,
+    .scissors-descr {
+        font-size: 0.8em;
+        font-weight: 275;
+        height: 3em;
+        overflow: hidden;
+        p {
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    .bc__card__pole {
+        height: 142px;
+    }
+}
+
+@media (max-width: vars.$mediaSmallMobile) {
+    .bc__card__pole {
+        height: 122px;
+    }
+
+    .pole-bar {
+        &::after {
+            width: 22px;
+            height: 22px;
+            left: calc((22px - 1.75em) / -2);
+        }
+    }
 }

@@ -92,20 +92,8 @@
     }
 }
 
-@media (max-width: vars.$mediaSmallTablet) {
-    html {
-        font-size: 14px;
-    }
-}
-
 @media (max-width: vars.$mediaMobile) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: vars.$mediaSmallMobile) {
-    html {
-        font-size: 10px;
+    .choose {
+        padding: 7em 0;
     }
 }
