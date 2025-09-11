@@ -2,40 +2,52 @@
     <hr class="footer__hr" />
     <div class="container container-brand">
         <div class="brand-name">
-            <h2 class="brand-name__title">Your Brand Name</h2>
+            <h2 class="brand-name__title"><a href="#">Your Brand Name</a></h2>
             <nav class="brand-nav">
-                <ul>
-                    <li class="brand-nav__item">Subscribe</li>
-                    <li class="brand-nav__item">
+                <ul class="brand-nav__list">
+                    <li class="brand-nav__subscr"><a href="#">Subscribe</a></li>
+                    <li class="brand-nav__first-order">
                         Get 10% off your first order
                     </li>
                 </ul>
             </nav>
             <form class="brand-name__form" action="#">
-                <input type="text" name="brand_text" class="brand-name__text" />
-                <input type="submit" value="" class="brand-name__submit" />
+                <input
+                    type="text"
+                    name="brand_text"
+                    class="brand-name__text"
+                    placeholder="Enter your email"
+                />
+                <button type="submit" class="brand-name__submit">
+                    <img
+                        src="./img/icons/icons.svg#play"
+                        alt="Send your mail icon"
+                    />
+                </button>
             </form>
         </div>
         <div class="account">
             <h3 class="account__title">Account</h3>
             <nav class="account__nav">
-                <ul>
-                    <li class="account__item">My Account</li>
-                    <li class="account__item">Login / Register</li>
-                    <li class="account__item">Cart</li>
-                    <li class="account__item">Wishlist</li>
-                    <li class="account__item">Shop</li>
+                <ul class="account__list">
+                    <li class="account__item"><a href="#">My Account</a></li>
+                    <li class="account__item">
+                        <a href="#">Login / Register</a>
+                    </li>
+                    <li class="account__item"><a href="#">Cart</a></li>
+                    <li class="account__item"><a href="#">Wishlist</a></li>
+                    <li class="account__item"><a href="#">Shop</a></li>
                 </ul>
             </nav>
         </div>
         <div class="q-link">
             <h3 class="q-link__title">Quick Link</h3>
             <nav class="q-link__nav">
-                <ul>
-                    <li class="q-link__item">Privacy Policy</li>
-                    <li class="q-link__item">Terms Of Use</li>
-                    <li class="q-link__item">FAQ</li>
-                    <li class="q-link__item">Contact</li>
+                <ul class="q-link__list">
+                    <li class="q-link__item"><a href="#">Privacy Policy</a></li>
+                    <li class="q-link__item"><a href="#">Terms Of Use</a></li>
+                    <li class="q-link__item"><a href="#">FAQ</a></li>
+                    <li class="q-link__item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,22 +56,59 @@
             <p class="app__descr">Save 3$ with App New User Only</p>
             <div class="app__stores">
                 <a href="#"
-                    ><img class="google-play" src="#" alt="Google Play"
+                    ><img
+                        class="google-play"
+                        src="./img/google_play.png"
+                        alt="Google Play"
                 /></a>
                 <a href="#"
-                    ><img class="app-store" src="#" alt="App Store"
+                    ><img
+                        class="app-store"
+                        src="./img/appstore.png"
+                        alt="App Store"
                 /></a>
             </div>
-            <div class="app__medias">
-                <a href="#"><img class="fb" src="#" alt="facebook" /></a>
-                <a href="#"><img class="twitter" src="#" alt="twitter" /></a>
-                <a href="#"><img class="inst" src="#" alt="instagramm" /></a>
-                <a href="#"><img class="in" src="#" alt="in" /></a>
-            </div>
+            <nav class="app__medias">
+                <ul class="app__medias__list">
+                    <li class="app__medias__item">
+                        <a href="#"
+                            ><img
+                                class="fb"
+                                src="./img/icons/icons.svg#fb"
+                                alt="facebook"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="twitter"
+                                src="./img/icons/icons.svg#twitter"
+                                alt="twitter"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="inst"
+                                src="./img/icons/icons.svg#inst"
+                                alt="instagram"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="in"
+                                src="./img/icons/icons.svg#in"
+                                alt="in"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <hr class="footer__hr" />
     <div class="container container-copy">
-        <span class="copyright"></span>
+        <img src="./img/icons/icons.svg#copyright" alt="copyright" />
+        <span class="copyright">Copyright 20XX. All right reserved</span>
     </div>
 </footer>
