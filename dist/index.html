@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5"
+        />
+        <meta name="description" content="Pet store Pet Care Services" />
+        <meta name="keywords" content="Pet Care Services, Pets, Dogs, Cats" />
+        <meta name="author" content="Pet Care Services" />
+        <title>Pet Care Services</title>
+        <link rel="stylesheet" href="css/style.min.css?_v=20250911185758" />
+        <link rel="icon" href="./img/favicon.svg" type="image/x-icon" />
+        <script defer src="js/app.min.js?_v=20250911185758"></script>
+    </head>
+    <body>
+        <header class="header">
+    <div class="container header__container">
+        <div class="logo">
+            <a href="#" aria-label="to Home section">Your Brand</a>
+        </div>
+        <nav class="nav" id="headerNav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" aria-label="to Home section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" aria-label="to Shop section">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" aria-label="to Collections section"
+                        >Collections</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a href="#" aria-label="to Sale section">Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" aria-label="to About Us section">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" aria-label="to Contact section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-tools">
+            <a
+                class="nav-tool search"
+                href="#"
+                aria-label="to Search information"
+                ><img src="./img/icons/icons.svg#search" alt="search logo"
+            /></a>
+            <a class="nav-tool user" href="#" aria-label="to User page"
+                ><img src="./img/icons/icons.svg#user" alt="user logo"
+            /></a>
+            <a class="nav-tool cart" href="#" aria-label="to your Cart page"
+                ><img src="./img/icons/icons.svg#cart" alt="cart logo"
+            /></a>
+            <div class="burger" id="burger" aria-label="Burger menu button">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+ <main>
+    <section class="hero">
+    <div class="container">
+        <div class="hero-info">
+            <h1 class="hero__title">
+                Pet <br />
+                care <br />
+                Services
+            </h1>
+            <div class="hero__descr-wrapper">
+                <p class="hero__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec tincidunt lobortis augue at dictum. Duis in arcu
+                    viverra ante vulputate facilisis
+                </p>
+            </div>
+            <div class="hero__buttons">
+                <a href="#" class="button" aria-label="to see more">See more</a>
+                <a class="button button--light" aria-label="to buy online"
+                    >Buy online</a
+                >
+            </div>
+        </div>
+        <div class="hero-media">
+            <div class="media-item">
+                <a class="media-link" href="#in" aria-label="to in"
+                    ><img src="./img/icons/icons.svg#in" alt="in logo"
+                /></a>
+            </div>
+            <div class="media-item">
+                <a class="media-link" href="#inst" aria-label="to instagramm"
+                    ><img
+                        src="./img/icons/icons.svg#inst"
+                        alt="instagramm logo"
+                /></a>
+            </div>
+            <div class="media-item">
+                <a class="media-link" href="#twitter" aria-label="to twitter"
+                    ><img
+                        src="./img/icons/icons.svg#twitter"
+                        alt="twitter logo"
+                /></a>
+            </div>
+            <div class="media-item">
+                <a class="media-link" href="#facebook" aria-label="to facebook"
+                    ><img src="./img/icons/icons.svg#fb" alt="facebook logo"
+                /></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="choose">
+    <div class="container choose__container">
+        <div class="pet-card">
+            <h2 class="pet-card__title">Cats</h2>
+            <div class="photo-wrapper">
+                <picture><source srcset="./img/choose_cat.avif" type="image/webp"><img src="./img/choose_cat.avif" alt="cat" /></picture>
+            </div>
+            <div class="number-bar">
+    <span class="number-bar__minus">-</span>
+    <span class="number-bar__number">0</span>
+    <span class="number-bar__plus">+</span>
+</div>
+
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Dogs</h2>
+            <div class="photo-wrapper">
+                <picture><source srcset="./img/choose_dog.avif" type="image/webp"><img src="./img/choose_dog.avif" alt="dog" /></picture>
+            </div>
+            <div class="number-bar">
+    <span class="number-bar__minus">-</span>
+    <span class="number-bar__number">0</span>
+    <span class="number-bar__plus">+</span>
+</div>
+
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+
+        <div class="pet-card">
+            <h2 class="pet-card__title">Services</h2>
+            <div class="photo-wrapper">
+                <picture><source srcset="./img/choose_services.avif" type="image/webp"><img src="./img/choose_services.avif" alt="service" /></picture>
+            </div>
+            <div class="number-bar">
+    <span class="number-bar__minus">-</span>
+    <span class="number-bar__number">0</span>
+    <span class="number-bar__plus">+</span>
+</div>
+
+            <button
+                class="button pet-card__button"
+                area-label="Add pet to cart"
+            >
+                Add to cart
+            </button>
+        </div>
+    </div>
+</section>
+
+    <section class="best-care">
+    <div class="container">
+        <div class="bc__info">
+            <h2 class="bc__title">Choose your best care for your lovely pet</h2>
+            <div class="bc__descr">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Morbi egestas risus ligula, vel rutrum leo malesuada nec.
+                </p>
+            </div>
+        </div>
+        <div class="bc__cards">
+            <div class="bc__card">
+                <h3 class="bc__card__title">Generate your idea</h3>
+                <div class="bc__card__descr">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi egestas risus ligula, vel rutrum leo malesuada
+                        nec.
+                    </p>
+                </div>
+                <div class="bc__card__pole">
+                    <form class="form-create" action="#" method="get">
+                        <input
+                            name="create_text"
+                            class="form-create__text"
+                            type="text"
+                        />
+                        <input
+                            name="create_button"
+                            class="button form-create__button"
+                            type="submit"
+                            value="Create"
+                        />
+                    </form>
+                </div>
+            </div>
+
+            <div class="bc__card">
+                <h3 class="bc__card__title">Generate your idea</h3>
+                <div class="bc__card__descr">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi egestas risus ligula, vel rutrum leo malesuada
+                        nec.
+                    </p>
+                </div>
+                <div class="bc__card__pole bc__card__pole--double">
+                    <div class="pole-settings">
+                        <div class="setting-image">
+                            <img
+                                src="./img/icons/icons.svg#settings"
+                                alt="settings"
+                            />
+                        </div>
+                        <div class="setting-info">
+                            <h4 class="setting-title">Lorem Ipsum</h4>
+                            <div class="setting-descr">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Morbi egestas risus ligula,
+                                    vel rutrum leo malesuada nec.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pole-scissors">
+                        <div class="scissors-image">
+                            <img
+                                src="./img/icons/icons.svg#scissors"
+                                alt="scissors"
+                            />
+                        </div>
+                        <div class="setting-info">
+                            <h4 class="scissors-title">Lorem Ipsum</h4>
+                            <div class="scissors-descr">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Morbi egestas risus ligula,
+                                    vel rutrum leo malesuada nec.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bc__card">
+                <div class="bc__card__title">Generate your idea</div>
+                <div class="bc__card__descr">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi egestas risus ligula, vel rutrum leo malesuada
+                        nec.
+                    </p>
+                </div>
+                <div class="bc__card__pole bc__card__pole--double">
+                    <div class="pole-bar"></div>
+                    <div class="pole-actions">
+                        <button
+                            class="button pole__button"
+                            aria-label="Download something"
+                        >
+                            Download
+                        </button>
+                        <button
+                            class="button pole__button"
+                            aria-label="Save something"
+                        >
+                            Save
+                        </button>
+                        <button class="button pole__button" aria-label="Lorem">
+                            Lorem
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="collection">
+    <div class="container">
+        <h2 class="collection__title">Collection</h2>
+        <div class="collection-tags">
+            <div class="tag-bar">
+                <span class="tag"><a href="#tag1">Tag1</a></span>
+                <span class="tag"><a href="#tag2">develope</a></span>
+                <span class="tag"><a href="#tag3">website</a></span>
+                <span class="tag"><a href="#tag4">digital marketing</a></span>
+                <span class="tag"><a href="#tag5">creative</a></span>
+            </div>
+            <div class="tag-bar">
+                <span class="tag"><a href="#tag6">Tag for 1234</a></span>
+                <span class="tag"><a href="#tag7">creative website</a></span>
+                <span class="tag"><a href="#tag8">website</a></span>
+                <span class="tag"><a href="#tag9">digital</a></span>
+                <span class="tag"><a href="#tag10">photograh</a></span>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="video">
+                <div class="video-prevue">
+                    <h4 class="video-prevue__title">Lorem Ipsum</h4>
+                    <div class="video-prevue__descr">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Praesentium id provident ab, iure ipsa
+                            necessitatibus deleniti voluptas nisi non aspernatur
+                            quos quam, minima eius possimus sint assumenda
+                            quisquam? Repellendus, delectus!
+                        </p>
+                    </div>
+                    <div class="video-prevue__pic">
+                        <img
+                            src="./img/icons/icons.svg#cat"
+                            alt="Prevue picture"
+                        />
+                    </div>
+                </div>
+                <div class="video__tools">
+                    <div class="play">
+                        <img
+                            src="./img/icons/icons.svg#video_play"
+                            alt="play video"
+                        />
+                    </div>
+                    <div class="video__something video__something--dark">
+                        Lorem Ipsum
+                    </div>
+                    <div class="video__something">Lorem Ipsum</div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-prevue">
+                    <h4 class="video-prevue__title">Lorem Ipsum</h4>
+                    <div class="video-prevue__descr">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero ipsam esse voluptatum vitae error minus
+                            maiores nemo blanditiis distinctio qui dolorem
+                            officiis, veniam mollitia soluta ab sapiente illum
+                            neque earum.
+                        </p>
+                    </div>
+                    <div class="video-prevue__pic">
+                        <img
+                            src="./img/icons/icons.svg#label"
+                            alt="Prevue picture"
+                        />
+                    </div>
+                </div>
+                <div class="video__tools">
+                    <div class="play">
+                        <img
+                            src="./img/icons/icons.svg#video_play"
+                            alt="play video"
+                        />
+                    </div>
+                    <div class="video__something video__something--dark">
+                        Lorem Ipsum
+                    </div>
+                    <div class="video__something">Lorem Ipsum</div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="video-prevue">
+                    <h4 class="video-prevue__title">Lorem Ipsum</h4>
+                    <div class="video-prevue__descr">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Error nulla velit cupiditate sequi
+                            consequuntur ipsam saepe quae itaque officiis porro
+                            dolorum, ea tempora mollitia blanditiis deserunt nam
+                            accusamus. Officiis, exercitationem.
+                        </p>
+                    </div>
+                    <div class="video-prevue__pic">
+                        <img
+                            src="./img/icons/icons.svg#dog"
+                            alt="Prevue picture"
+                        />
+                    </div>
+                </div>
+                <div class="video__tools">
+                    <div class="play">
+                        <img
+                            src="./img/icons/icons.svg#video_play"
+                            alt="play video"
+                        />
+                    </div>
+                    <div class="video__something video__something--dark">
+                        Lorem Ipsum
+                    </div>
+                    <div class="video__something">Lorem Ipsum</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="best-seller">
+    <div class="container">
+        <h2 class="best-seller__title">Best Seller</h2>
+        <div class="tag-bar best-seller__tag-bar">
+            <div class="tag best-seller__tag"><a href="#">Lorem Ipsum</a></div>
+            <div class="tag best-seller__tag"><a href="#">Tag1</a></div>
+            <div class="tag best-seller__tag">
+                <a href="#">Product tag 2</a>
+            </div>
+            <div class="tag best-seller__tag"><a href="#">category 1</a></div>
+            <div class="tag best-seller__tag"><a href="#">tag 1234</a></div>
+            <div class="tag best-seller__tag"><a href="#">Lorem ipsum</a></div>
+            <div class="tag best-seller__tag">
+                <a href="#">Dolo sit amet</a>
+            </div>
+        </div>
+        <div class="pet-cards best-seller__pet-cards">
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pet-card pet-card__bs">
+                <div class="pet-card__img">
+                    <picture><source srcset="./img/card_fake_img.avif" type="image/webp"><img src="./img/card_fake_img.avif" alt="pet image" /></picture>
+                </div>
+                <div class="pet-card__info">
+                    <div class="pet-card__main">
+                        <h4 class="pet-card__title">Lorem Ipsum</h4>
+                        <div class="pet-card__descr">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eveniet ipsum voluptates repellendus in quas,
+                            officia praesentium architecto iure possimus error
+                            quia saepe. Impedit illo fugiat quidem non tempore!
+                            Eaque, dolores.
+                        </div>
+                        <div class="pet-card__rating">
+                            <span class="pet-card__star"
+                                ><img
+                                    src="./img/icons/icons.svg#star"
+                                    alt="star logo"
+                            /></span>
+                            <span class="pet-card__rating-num">(4.5)</span>
+                        </div>
+                    </div>
+                    <div class="pet-card__bottom">
+                        <button class="button">Add to cart</button>
+                        <div class="pet-card__price">
+                            <span class="pet-card__old-plice">$160,00</span>
+                            <span class="pet-card__new-plice">$120,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact">
+    <div class="contact__bg-color">
+        <div class="contact__bg-img">
+            <picture><source srcset="./img/contact_img.avif" type="image/webp"><img src="./img/contact_img.avif" alt="Pet image" /></picture>
+        </div>
+        <div class="container">
+            <div class="contact__descr">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa doloribus tenetur, voluptatem repudiandae fugit atque
+                    quasi, ullam natus tempore pariatur consequuntur minima
+                    accusamus veritatis officiis ipsum odio? Provident, facere
+                    sequi!
+                </p>
+            </div>
+
+            <form action="#" class="contact__form">
+                <input
+                    type="text"
+                    placeholder="Enter your text here"
+                    name="contact__text"
+                    class="contact__text"
+                />
+                <input
+                    type="submit"
+                    name="contact__submit"
+                    class="button contact__submit"
+                    value="Enter"
+                />
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+        <footer class="footer">
+    <hr class="footer__hr" />
+    <div class="container container-brand">
+        <div class="brand-name">
+            <h2 class="brand-name__title"><a href="#">Your Brand Name</a></h2>
+            <nav class="brand-nav">
+                <ul class="brand-nav__list">
+                    <li class="brand-nav__subscr"><a href="#">Subscribe</a></li>
+                    <li class="brand-nav__first-order">
+                        Get 10% off your first order
+                    </li>
+                </ul>
+            </nav>
+            <form class="brand-name__form" action="#">
+                <input
+                    type="text"
+                    name="brand_text"
+                    class="brand-name__text"
+                    placeholder="Enter your email"
+                />
+                <button type="submit" class="brand-name__submit">
+                    <img
+                        src="./img/icons/icons.svg#play"
+                        alt="Send your mail icon"
+                    />
+                </button>
+            </form>
+        </div>
+        <div class="account">
+            <h3 class="account__title">Account</h3>
+            <nav class="account__nav">
+                <ul class="account__list">
+                    <li class="account__item"><a href="#">My Account</a></li>
+                    <li class="account__item">
+                        <a href="#">Login / Register</a>
+                    </li>
+                    <li class="account__item"><a href="#">Cart</a></li>
+                    <li class="account__item"><a href="#">Wishlist</a></li>
+                    <li class="account__item"><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="q-link">
+            <h3 class="q-link__title">Quick Link</h3>
+            <nav class="q-link__nav">
+                <ul class="q-link__list">
+                    <li class="q-link__item"><a href="#">Privacy Policy</a></li>
+                    <li class="q-link__item"><a href="#">Terms Of Use</a></li>
+                    <li class="q-link__item"><a href="#">FAQ</a></li>
+                    <li class="q-link__item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="app">
+            <h3 class="app__title">Download App</h3>
+            <p class="app__descr">Save 3$ with App New User Only</p>
+            <div class="app__stores">
+                <a href="#"
+                    ><img
+                        class="google-play"
+                        src="./img/google_play.png"
+                        alt="Google Play"
+                /></a>
+                <a href="#"
+                    ><img
+                        class="app-store"
+                        src="./img/appstore.png"
+                        alt="App Store"
+                /></a>
+            </div>
+            <nav class="app__medias">
+                <ul class="app__medias__list">
+                    <li class="app__medias__item">
+                        <a href="#"
+                            ><img
+                                class="fb"
+                                src="./img/icons/icons.svg#fb"
+                                alt="facebook"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="twitter"
+                                src="./img/icons/icons.svg#twitter"
+                                alt="twitter"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="inst"
+                                src="./img/icons/icons.svg#inst"
+                                alt="instagram"
+                        /></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#"
+                            ><img
+                                class="in"
+                                src="./img/icons/icons.svg#in"
+                                alt="in"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <hr class="footer__hr" />
+    <div class="container container-copy">
+        <img src="./img/icons/icons.svg#copyright" alt="copyright" />
+        <span class="copyright">Copyright 2025. All right reserved</span>
+    </div>
+</footer>
+
+    </body>
+</html>
