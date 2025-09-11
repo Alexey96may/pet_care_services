@@ -197,6 +197,20 @@
 }
 
 @media (max-width: vars.$mediaMobile) {
+    .best-seller__tag-bar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0.5em;
+        background-color: inherit;
+        overflow: auto;
+        -ms-overflow-style: none;
+        border-radius: unset;
+        border: none;
+        margin-bottom: 5em;
+    }
+
     .best-seller {
         margin-bottom: 5.38rem;
     }

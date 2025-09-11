@@ -25,10 +25,15 @@
     border: 1px solid vars.$darkestBorderColor;
     border-radius: 30px;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: auto;
+    -ms-overflow-style: none;
     display: flex;
     flex-wrap: nowrap;
     gap: 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .tag {
@@ -81,6 +86,10 @@
 
         &:hover {
             background-color: vars.$pickedBgColor;
+        }
+
+        svg {
+            fill: vars.$darkBgColor;
         }
     }
 
@@ -165,19 +174,16 @@
     cursor: pointer;
     transition: vars.$basicTrans;
 
-    img {
+    svg {
         object-fit: contain;
         width: 1.5em;
         height: 1.5em;
         transition: vars.$basicTrans;
+        fill: vars.$lightBgColor;
     }
 
-    &:hover {
-        background-color: vars.$pickedBgColor;
-    }
-
-    &:hover img {
-        transform: vars.$basicScale;
+    &:hover svg {
+        fill: vars.$pickedBgColor;
     }
 }
 
@@ -206,8 +212,7 @@
     margin-left: 0;
 
     &:hover {
-        background-color: vars.$pickedBgColor;
-        color: vars.$darkTextColor;
+        color: vars.$pickedBgColor;
     }
 }
 
@@ -243,6 +248,12 @@
             &:hover {
                 background-color: inherit;
             }
+        }
+    }
+
+    .play {
+        &:hover svg {
+            fill: vars.$lightBgColor;
         }
     }
 
