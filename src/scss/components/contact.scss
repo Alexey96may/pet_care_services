@@ -1,0 +1,133 @@
+@use "../base/vars";
+@use "../ui/button";
+
+.contact {
+    position: relative;
+    color: vars.$darkTextColor;
+    padding: 5em 0 0;
+
+    &__bg-color {
+        background-color: vars.$mediumBgColor;
+    }
+
+    &__bg-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        max-height: 282px;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        padding-top: 2.56em;
+        padding-bottom: 2.56em;
+    }
+}
+
+.contact__descr {
+    max-width: 19em;
+    margin-bottom: 1.5em;
+    max-height: 2.5em;
+    overflow: hidden;
+    position: relative;
+
+    p {
+        font-size: vars.$pFontSize;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5em;
+}
+
+.contact__text {
+    border-radius: vars.$bigBorderRadius;
+    padding: 1em 1.5em;
+    border: none;
+    transition: vars.$basicTrans;
+    background-color: vars.$darkBgColor;
+    color: vars.$lightTextColor;
+    width: 297px;
+
+    &::placeholder {
+        color: #c4c4c4;
+    }
+
+    &:focus {
+        background-color: vars.$lightBgColor;
+        color: vars.$darkTextColor;
+        outline: none;
+        border: none;
+    }
+}
+
+.contact__submit {
+    border-radius: vars.$bigBorderRadius;
+    background-color: vars.$darkBgColor;
+    padding: 1em 1.5em;
+    border: none;
+}
+
+@media (max-width: vars.$mediaTablet) {
+    .contact__descr {
+        margin-bottom: 2em;
+        max-height: 3em;
+
+        p {
+            color: vars.$lightTextColor;
+            line-height: 1.5;
+        }
+    }
+
+    .contact__text {
+        width: 257px;
+    }
+}
+
+@media (max-width: vars.$mediaSmallTablet) {
+    .contact__text {
+        width: 210px;
+    }
+
+    .contact__form {
+        gap: 1em;
+    }
+}
+
+@media (max-width: vars.$mediaMobile) {
+    .contact__descr {
+        max-width: 19em;
+        margin-bottom: 1.5em;
+        max-height: 3em;
+    }
+
+    .contact__form {
+        gap: 0.5em;
+    }
+}
+
+@media (max-width: vars.$mediaSmallMobile) {
+    .contact {
+        .container {
+            padding-top: 1.3em;
+            padding-bottom: 1.3em;
+        }
+    }
+
+    .contact__descr {
+        max-width: 15em;
+        margin-bottom: 1em;
+    }
+}
