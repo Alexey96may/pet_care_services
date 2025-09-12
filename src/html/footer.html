@@ -1,24 +1,41 @@
 <footer class="footer">
     <hr class="footer__hr" />
     <div class="container container-brand">
-        <div class="brand-name">
+        <div class="brand-name" aria-label="Brand Links section">
             <h2 class="brand-name__title"><a href="#">Your Brand Name</a></h2>
-            <nav class="brand-nav">
-                <ul class="brand-nav__list">
-                    <li class="brand-nav__subscr"><a href="#">Subscribe</a></li>
-                    <li class="brand-nav__first-order">
+            <nav class="brand-nav" aria-label="Subscribe navigation">
+                <ul
+                    class="brand-nav__list"
+                    aria-label="Subscribe navigation list"
+                >
+                    <li class="brand-nav__subscr">
+                        <a href="#" aria-label="To Subscribe">Subscribe</a>
+                    </li>
+                    <li
+                        class="brand-nav__first-order"
+                        aria-label="Discount text"
+                    >
                         Get 10% off your first order
                     </li>
                 </ul>
             </nav>
-            <form class="brand-name__form" action="#">
+            <form
+                class="brand-name__form"
+                action="#"
+                aria-label="Send email form"
+            >
                 <input
-                    type="text"
+                    type="email"
                     name="brand_text"
                     class="brand-name__text"
                     placeholder="Enter your email"
+                    aria-label="Write your email"
                 />
-                <button type="submit" class="brand-name__submit">
+                <button
+                    type="submit"
+                    class="brand-name__submit"
+                    aria-label="Send your email"
+                >
                     <img
                         src="./img/icons/icons.svg#play"
                         alt="Send your mail icon"
@@ -26,52 +43,74 @@
                 </button>
             </form>
         </div>
-        <div class="account">
+        <div class="account" aria-label="Account Links section">
             <h3 class="account__title">Account</h3>
-            <nav class="account__nav">
-                <ul class="account__list">
+            <nav class="account__nav" aria-label="Account navigation">
+                <ul class="account__list" aria-label="Account navigation list">
                     <li class="account__item"><a href="#">My Account</a></li>
                     <li class="account__item">
                         <a href="#">Login / Register</a>
                     </li>
-                    <li class="account__item"><a href="#">Cart</a></li>
-                    <li class="account__item"><a href="#">Wishlist</a></li>
-                    <li class="account__item"><a href="#">Shop</a></li>
+                    <li class="account__item">
+                        <a href="#" aria-label="To Cart">Cart</a>
+                    </li>
+                    <li class="account__item">
+                        <a href="#" aria-label="To Wishlist">Wishlist</a>
+                    </li>
+                    <li class="account__item">
+                        <a href="#" aria-label="To Shop">Shop</a>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="q-link">
+        <div class="q-link" aria-label="Quick Link section">
             <h3 class="q-link__title">Quick Link</h3>
-            <nav class="q-link__nav">
-                <ul class="q-link__list">
-                    <li class="q-link__item"><a href="#">Privacy Policy</a></li>
-                    <li class="q-link__item"><a href="#">Terms Of Use</a></li>
-                    <li class="q-link__item"><a href="#">FAQ</a></li>
-                    <li class="q-link__item"><a href="#">Contact</a></li>
+            <nav class="q-link__nav" aria-label="Quick Link navigation">
+                <ul
+                    class="q-link__list"
+                    aria-label="Quick Link navigation list"
+                >
+                    <li class="q-link__item">
+                        <a href="#" aria-label="To Privacy Policy"></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#" aria-label="To Terms Of Use"></a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#" aria-label="To FAQ">FAQ</a>
+                    </li>
+                    <li class="q-link__item">
+                        <a href="#" aria-label="To Contact"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="app">
+        <div class="app" aria-label="App Link section">
             <h3 class="app__title">Download App</h3>
             <p class="app__descr">Save 3$ with App New User Only</p>
-            <div class="app__stores">
-                <a href="#"
+            <div class="app__stores" aria-label="App stores section">
+                <a href="#" aria-label="To google play"
                     ><img
                         class="google-play"
                         src="./img/google_play.png"
                         alt="Google Play"
                 /></a>
-                <a href="#"
+                <a href="#" aria-label="To appstore"
                     ><img
                         class="app-store"
                         src="./img/appstore.png"
                         alt="App Store"
                 /></a>
             </div>
-            <nav class="app__medias">
-                <ul class="app__medias__list">
+            <nav class="app__medias" aria-label="App medias navigation">
+                <ul
+                    class="app__medias__list"
+                    aria-label="App medias navigation list"
+                >
                     <li class="app__medias__item">
-                        <a href="#"
+                        <a
+                            href="https://www.facebook.com/"
+                            aria-label="To facebook"
                             ><img
                                 class="fb"
                                 src="./img/icons/icons.svg#fb"
@@ -79,7 +118,7 @@
                         /></a>
                     </li>
                     <li class="q-link__item">
-                        <a href="#"
+                        <a href="https://twitter.com/" aria-label="To twitter"
                             ><img
                                 class="twitter"
                                 src="./img/icons/icons.svg#twitter"
@@ -87,7 +126,9 @@
                         /></a>
                     </li>
                     <li class="q-link__item">
-                        <a href="#"
+                        <a
+                            href="https://www.instagram.com/"
+                            aria-label="To instagram"
                             ><img
                                 class="inst"
                                 src="./img/icons/icons.svg#inst"
@@ -95,11 +136,13 @@
                         /></a>
                     </li>
                     <li class="q-link__item">
-                        <a href="#"
+                        <a
+                            href="https://www.linkedin.com/"
+                            aria-label="To LinkedIn"
                             ><img
                                 class="in"
                                 src="./img/icons/icons.svg#in"
-                                alt="in"
+                                alt="LinkedIn"
                         /></a>
                     </li>
                 </ul>
@@ -109,6 +152,8 @@
     <hr class="footer__hr" />
     <div class="container container-copy">
         <img src="./img/icons/icons.svg#copyright" alt="copyright" />
-        <span class="copyright">Copyright 2025. All right reserved</span>
+        <span aria-label="Copyright text" class="copyright"
+            >Copyright 2025. All right reserved</span
+        >
     </div>
 </footer>

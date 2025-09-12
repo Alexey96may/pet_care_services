@@ -2,15 +2,15 @@
     <div class="container">
         <div class="bc__info">
             <h2 class="bc__title">Choose your best care for your lovely pet</h2>
-            <div class="bc__descr">
+            <div class="bc__descr" area-label="Description">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Morbi egestas risus ligula, vel rutrum leo malesuada nec.
                 </p>
             </div>
         </div>
-        <div class="bc__cards">
-            <div class="bc__card">
+        <div class="bc__cards" area-label="best-care cards">
+            <div class="bc__card" area-label="best-care card">
                 <h3 class="bc__card__title">Generate your idea</h3>
                 <div class="bc__card__descr">
                     <p>
@@ -20,23 +20,30 @@
                     </p>
                 </div>
                 <div class="bc__card__pole">
-                    <form class="form-create" action="#" method="get">
+                    <form
+                        class="form-create"
+                        action="#"
+                        method="get"
+                        area-label="best-care form"
+                    >
                         <input
                             name="create_text"
                             class="form-create__text"
                             type="text"
+                            area-label="create text input"
                         />
                         <input
                             name="create_button"
                             class="button form-create__button"
                             type="submit"
+                            area-label="Send created text"
                             value="Create"
                         />
                     </form>
                 </div>
             </div>
 
-            <div class="bc__card">
+            <div class="bc__card" area-label="best-care card">
                 <h3 class="bc__card__title">Generate your idea</h3>
                 <div class="bc__card__descr">
                     <p>
@@ -46,14 +53,17 @@
                     </p>
                 </div>
                 <div class="bc__card__pole bc__card__pole--double">
-                    <div class="pole-settings">
+                    <div class="pole-settings" area-label="Settings section">
                         <div class="setting-image">
                             <img
                                 src="./img/icons/icons.svg#settings"
                                 alt="settings"
                             />
                         </div>
-                        <div class="setting-info">
+                        <div
+                            class="setting-info"
+                            area-label="Settings info section"
+                        >
                             <h4 class="setting-title">Lorem Ipsum</h4>
                             <div class="setting-descr">
                                 <p>
@@ -64,14 +74,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pole-scissors">
+                    <div
+                        class="pole-scissors"
+                        area-label="Section with scissors"
+                    >
                         <div class="scissors-image">
                             <img
                                 src="./img/icons/icons.svg#scissors"
                                 alt="scissors"
                             />
                         </div>
-                        <div class="setting-info">
+                        <div
+                            class="setting-info"
+                            area-label="Section with info"
+                        >
                             <h4 class="scissors-title">Lorem Ipsum</h4>
                             <div class="scissors-descr">
                                 <p>
@@ -85,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="bc__card">
+            <div class="bc__card" area-label="best-care card">
                 <div class="bc__card__title">Generate your idea</div>
                 <div class="bc__card__descr">
                     <p>
@@ -95,7 +111,7 @@
                     </p>
                 </div>
                 <div class="bc__card__pole bc__card__pole--double">
-                    <div class="pole-bar"></div>
+                    <div class="pole-bar" area-label="A bar in card"></div>
                     <div class="pole-actions">
                         <button
                             class="button pole__button"

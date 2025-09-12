@@ -4,7 +4,10 @@
             <img src="./img/contact_img.avif" alt="Pet image" />
         </div>
         <div class="container">
-            <div class="contact__descr">
+            <div
+                class="contact__descr"
+                aria-label="Our brand description section"
+            >
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsa doloribus tenetur, voluptatem repudiandae fugit atque
@@ -14,18 +17,20 @@
                 </p>
             </div>
 
-            <form action="#" class="contact__form">
+            <form action="#" class="contact__form" aria-label="Contacts form">
                 <input
                     type="text"
                     placeholder="Enter your text here"
                     name="contact__text"
                     class="contact__text"
+                    aria-label="Print your text here"
                 />
                 <input
                     type="submit"
                     name="contact__submit"
                     class="button contact__submit"
                     value="Enter"
+                    aria-label="Enter your text here"
                 />
             </form>
         </div>
