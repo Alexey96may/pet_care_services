@@ -92,6 +92,7 @@
         color: vars.$lightTextColor;
         padding: 0 7.7em 0 1em;
     }
+
     &__button {
         width: 5.3em;
         height: 2.5em;
@@ -281,6 +282,17 @@
             width: 22px;
             height: 22px;
             left: calc((22px - 1.75em) / -2);
+        }
+    }
+}
+
+@media (hover: none) {
+    .form-create {
+        &__button {
+            &:hover {
+                background-color: vars.$pickedBgColor !important;
+                color: vars.$darkTextColor !important;
+            }
         }
     }
 }

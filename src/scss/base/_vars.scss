@@ -1,27 +1,27 @@
 // Text Colors
 $lightTextColor: #ffecc2;
 $darkTextColor: #264236;
-$paleTextColor: #848d74;
-$mediumTextColor: #96a757;
+$paleTextColor: #666d5a; //#848d74;
+$mediumTextColor: #4a522b; //#96a757;
 
 //  Background Colors
 $lightBgColor: #ffecc2;
-$mediumBgColor: #96a757;
-$mediumBgColorOp: rgb(150, 167, 87, 0.9);
+$mediumBgColor: #7d8b49; //#96a757;
+$mediumBgColorOp: rgba(125, 139, 73, 0.9);
 $darkBgColor: #264236;
 $pickedBgColor: #e8c01b;
 
 //  Border Colors
 $lightBorderColor: #ffecc2;
 $darkestBorderColor: #264236;
-$darkBorderColor: #96a757;
+$darkBorderColor: #4a522b; // #96a757;
 
 // Gradient
 $maskGrad: linear-gradient(
     270deg,
-    rgba(150, 167, 87, 0.3) 0%,
-    rgba(150, 167, 87, 0.4) 50%,
-    rgba(150, 167, 87, 0.6) 100%
+    rgba(125, 139, 73, 0.3) 0%,
+    rgba(125, 139, 73, 0.4) 50%,
+    rgba(125, 139, 73, 0.6) 100%
 );
 
 // Fonts
