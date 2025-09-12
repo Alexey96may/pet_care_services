@@ -1,7 +1,9 @@
 @use "../base/vars";
 
 .collection {
-    margin-bottom: 11.375rem;
+    margin-bottom: 5rem;
+    padding-top: 6.4em;
+
     &__title {
         font-size: vars.$tFontSize;
         font-family: vars.$titleFontFamily;
