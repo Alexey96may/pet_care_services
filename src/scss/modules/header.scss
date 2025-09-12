@@ -58,13 +58,15 @@
     width: 2em;
     height: 2em;
 
-    img {
+    svg {
         object-fit: contain;
         width: 100%;
         height: 100%;
         transition: vars.$basicTrans;
+        stroke: vars.$lightBgColor;
+
         &:hover {
-            transform: scale(1.2);
+            stroke: vars.$pickedBgColor;
         }
     }
 }
@@ -214,6 +216,14 @@
 }
 
 @media (hover: none) {
+    .nav-tool {
+        svg {
+            &:hover {
+                stroke: vars.$lightBgColor;
+            }
+        }
+    }
+
     .logo {
         a {
             &:hover {

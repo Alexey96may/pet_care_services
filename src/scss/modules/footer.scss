@@ -85,10 +85,16 @@
     top: 0;
     right: 0;
 
-    img {
+    svg {
         object-fit: contain;
-        width: 1.25em;
-        height: 1.125em;
+        width: 1.45em;
+        height: 1.325em;
+        vertical-align: middle;
+        transition: vars.$basicTrans;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -142,11 +148,16 @@
     justify-content: flex-end;
     flex-wrap: nowrap;
     flex-direction: row;
-    gap: 1.75em;
+    gap: 1em;
 
-    img {
-        width: 25px;
-        height: 25px;
+    svg {
+        width: 2em;
+        height: 2em;
+        transition: vars.$basicTrans;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -157,10 +168,10 @@
     font-size: vars.$basicFontSize;
     line-height: 1.5;
 
-    img {
-        object-fit: cover;
-        width: 1em;
-        height: 1em;
+    svg {
+        object-fit: contain;
+        width: 2em;
+        height: 2em;
         display: inline-block;
         vertical-align: middle;
     }
@@ -168,7 +179,6 @@
     .copyright {
         font-weight: 400;
         vertical-align: middle;
-        margin-left: 3.6px;
     }
 }
 
@@ -186,6 +196,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .container-copy {
         font-size: 0.8em;
     }
