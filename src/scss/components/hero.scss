@@ -66,6 +66,22 @@
     }
 }
 
+@media (max-width: vars.$mediaTablet) {
+    .hero {
+        background-image: vars.$maskGrad, url("../img/hero_bg.avif");
+        background-color: vars.$mediumBgColor;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        padding: 7.3em 0 4.3em;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
 @media (max-width: vars.$mediaSmallTablet) {
     .hero {
         padding: 6.3em 0 3.3em;

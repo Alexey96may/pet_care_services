@@ -16,6 +16,14 @@ $lightBorderColor: #ffecc2;
 $darkestBorderColor: #264236;
 $darkBorderColor: #96a757;
 
+// Gradient
+$maskGrad: linear-gradient(
+    270deg,
+    rgba(150, 167, 87, 0.3) 0%,
+    rgba(150, 167, 87, 0.4) 50%,
+    rgba(150, 167, 87, 0.6) 100%
+);
+
 // Fonts
 $mainFontFamily: "Poppins", "Open Sans", sans-serif;
 $titleFontFamily: "Skincake", "Pacifico", sans-serif;

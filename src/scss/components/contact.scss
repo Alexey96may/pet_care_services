@@ -82,6 +82,13 @@
 }
 
 @media (max-width: vars.$mediaTablet) {
+    .contact {
+        &__bg-color {
+            background-color: vars.$mediumBgColor;
+            filter: brightness(90%);
+        }
+    }
+
     .contact__descr {
         margin-bottom: 2em;
         max-height: 3em;
