@@ -1,13 +1,11 @@
 import * as flsFunctions from "./modules/functions.js";
 import { Burger } from "./ui/burger.js";
-
-function my_test(x: number): boolean {
-    let answer = x > 2 ? true : false;
-    return answer;
-}
-
-my_test(24);
+import { AddToCart } from "./ui/addToCart.js";
 
 flsFunctions.isWebp();
+
+let numberBar = document.querySelectorAll(".number-bar");
+
+new AddToCart(numberBar);
 
 new Burger();

@@ -15,6 +15,7 @@
 
 .number-bar__minus,
 .number-bar__plus {
+    user-select: none;
     cursor: pointer;
     transition: vars.$basicTrans;
     &:hover {

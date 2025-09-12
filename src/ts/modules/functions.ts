@@ -1,6 +1,5 @@
 export function isWebp() {
     function testWebp(cb: Function) {
-        console.log("from isWebp");
         let webp = new Image();
         webp.onload = webp.onerror = function () {
             cb(webp.height == 2);
